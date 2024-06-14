@@ -1,0 +1,70 @@
+.conteudo-nossa-equipe {
+  height: 100vh;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  max-width: 100%;
+  margin-top: 5rem;
+}
+
+.conteudo-nossa-equipe .grid-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5rem;
+}
+
+.conteudo-nossa-equipe .card:nth-child(2){
+  margin-top: -3rem;
+}
+
+.conteudo-nossa-equipe .card:nth-child(5){
+  margin-top: -3rem;
+}
+
+.conteudo-nossa-equipe .card {
+  width: 40rem;
+  height: 40rem;
+  background-color: white;
+  border-radius: 5rem;
+  padding: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  transition: all 500ms ease-in-out;
+}
+
+.conteudo-nossa-equipe .card:hover{
+  transform: translate(0%, -5%) scale(1);
+  box-shadow: 0rem 1rem 3rem rgba(0, 0, 0, 0.5);
+}
+
+.conteudo-nossa-equipe .texto-card{
+display: flex;
+flex-direction: column;
+justify-content: center;
+margin-left: 5rem;
+margin-top: 1rem;
+}
+
+.conteudo-nossa-equipe span{
+    font-size: 2rem;
+    color: grey;
+    margin-top: -1rem;
+}
+
+.box-foto {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.conteudo-nossa-equipe .foto {
+  background-color: black;
+  color: white;
+  text-align: center;
+  margin-top:2.5rem;
+  width: 25rem;
+  height: 30rem;
+}

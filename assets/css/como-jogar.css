@@ -1,0 +1,69 @@
+.conteudo-como-jogar {
+  height: 100vh;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  margin-top: 5rem;
+}
+
+.conteudo-como-jogar h2 {
+  margin-top: -22rem;
+}
+
+.conteudo-como-jogar .grid-cards {
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+}
+
+.conteudo-como-jogar .card {
+  display: flex;
+  flex-direction: column;
+  width: 40rem;
+  height: 70rem;
+  background-color: white;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 3.2rem;
+  text-align: center;
+  transition: all 450ms ease-in-out;
+}
+
+.conteudo-como-jogar .card:hover {
+  transform: translate(-3%, -3%) scale(1);
+  box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.3);
+}
+
+.hex {
+  width: 35rem;
+  height: 35rem;
+  background: #c9c9c9;
+  -webkit-clip-path: polygon(
+    50% 0%,
+    95% 25%,
+    95% 75%,
+    50% 100%,
+    5% 75%,
+    5% 25%
+  );
+  clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+
+  font-size: 20rem;
+  font-weight: bold;
+  color: red;
+}
+
+.indice-hex {
+  font-size: 15rem;
+  font-weight: bold;
+  color: red;
+  position: absolute;
+  margin-left: 20rem;
+}
+
+.texto-card {
+  margin: -10rem 0 0 0;
+  font-weight: 500;
+}
